@@ -11,7 +11,7 @@ window.resizeTo(
   , window.screen.availHeight || window.screen.height
 )
 
-require('@workshop/server')({
+require('workshop/server')({
   nw: true
 }, function(err, uri) {
   if (err) throw err

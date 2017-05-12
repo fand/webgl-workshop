@@ -80,7 +80,7 @@ function getHandlers(exercises, answers) {
     var Router = require(target)
     var pkg    = require(target + '/package.json')
     var uri    = target // pkg.url
-    var dst    = path.join(answers, uri.replace('@exercise', ''))
+    var dst    = path.join(answers, uri.replace('exercise', ''))
 
     mkdirp.sync(dst)
     uri = '/' + uri

@@ -46,7 +46,7 @@ function prompt() {
 }
 
 function boot() {
-  require('@workshop/server')({}, function(err, address) {
+  require('workshop/server')({}, function(err, address) {
     if (err) throw err
 
     if (argv.open) {
